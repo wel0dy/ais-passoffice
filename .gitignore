@@ -1,0 +1,42 @@
+# Результаты сборки .NET (без косой черты в начале – действуют на любом уровне)
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Pp]ublish/
+
+# Служебные файлы Visual Studio и Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Результаты тестов и покрытия
+[Tt]est[Rr]esults/
+coverage*.xml
+
+# Локальные базы данных и журналы
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.mdf
+*.ldf
+*.log
+logs/
+
+# Персональные данные посетителей: фото для фейсконтроля и выгрузки журналов проходов
+storage/faces/
+storage/documents/
+exports/
+
+# Секреты: строки подключения, ключи контроллеров турникетов
+appsettings.Development.json
+appsettings.Local.json
+*.env
+secrets.json
+
+# Системные файлы ОС
+Thumbs.db
+.DS_Store
