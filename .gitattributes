@@ -1,0 +1,22 @@
+# Нормализация окончаний строк для всех текстовых файлов
+* text=auto
+
+# Исходный код и конфигурация
+*.cs     text diff=csharp
+*.csproj text
+*.sln    text eol=crlf
+*.json   text
+*.yml    text
+*.sql    text
+*.md     text
+
+# Бинарные файлы: Git не меняет окончания строк и не сравнивает построчно
+*.png  binary
+*.jpg  binary
+*.pdf  binary
+*.dll  binary
+*.exe  binary
+
+*.onnx filter=lfs diff=lfs merge=lfs -text
+*.bak filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
